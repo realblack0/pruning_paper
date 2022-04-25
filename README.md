@@ -17,11 +17,11 @@ Paper reviews for Awesome Pruning [![Awesome](https://awesome.re/badge.svg)](htt
 | [Accelerate CNNs from Three Dimensions: A Comprehensive Pruning Framework](https://arxiv.org/abs/2010.04879) | ICML | `F`     | -  |
 | |
 | [Group Fisher Pruning for Practical Network Compression](https://arxiv.org/abs/2108.00708) | ICML | `F`     | [PyTorch(Author)](https://github.com/jshilong/FisherPruning)   |
-| |
-| [On the Predictability of Pruning Across Scales](https://arxiv.org/abs/2006.10621) | ICML | `W`     | -   |
-| |
-| [Towards Compact CNNs via Collaborative Compression](https://arxiv.org/abs/2105.11228) | CVPR | `F`     | [PyTorch(Author)](https://github.com/liuguoyou/Towards-Compact-CNNs-via-Collaborative-Compression)   |
-| |
+| feature map의 importance를 계산하는 방법을 제안함 |
+| 🔥 [On the Predictability of Pruning Across Scales](https://arxiv.org/abs/2006.10621) | ICML | `W`     | -   |
+| 어느정도 pruning 하면 성능이 얼마나 나올지 계산하는 방법 제안함. |
+| 🔥 [Towards Compact CNNs via Collaborative Compression](https://arxiv.org/abs/2105.11228) | CVPR | `F`     | [PyTorch(Author)](https://github.com/liuguoyou/Towards-Compact-CNNs-via-Collaborative-Compression)   |
+| <ul> <li> channel pruning + Tensor decomposition을 제안함. 이건 나랑 상관 없음 </li> <li> compression rate를 automatically 선택하는 global compression rate optimization을 제안함. </li> </ul>  |
 | [Content-Aware GAN Compression](https://arxiv.org/abs/2104.02244) | CVPR | `F`     | [PyTorch(Author)](https://github.com/lychenyoko/content-aware-gan-compression)   |
 | GAN에 특화된 방법. 나랑 관련 없음. |
 | [Permute, Quantize, and Fine-tune: Efficient Compression of Neural Networks](https://arxiv.org/abs/2010.15703) | CVPR | `F`     | [PyTorch(Author)](https://github.com/uber-research/permute-quantize-finetune)   |
@@ -38,20 +38,20 @@ Paper reviews for Awesome Pruning [![Awesome](https://awesome.re/badge.svg)](htt
 | Detection task에서 NAS를 효율적으로 사용하기 위해서 Pruning과 Distilation을 활용하는 방법을 제안. 내 방향성과 맞지않음 |
 | [A Gradient Flow Framework For Analyzing Network Pruning](https://openreview.net/forum?id=rumv7QmLUue) | ICLR | `F`     | [PyTorch(Author)](https://github.com/EkdeepSLubana/flowandprune)   |
 | <ul> <li> 잘 모르겠지만 standard method를 알려줘서 봐봄직함. </li> <li> method를 propose하는 건 아닌 것 같고 해석 view를 제시하는 듯하다.  </li> <li> importance-measure based prunning 방법을 training 중에 적용해서 training과 pruning을 동시에 하는 방법들이 최근 많이 제안되었는데, 그에 대한 이론적 근거를 분석한 것 같다. </li> <li> importance-measure based pruning에 대한 소개를 읽고 적용해보면 좋겠다. (이 분야의 sota일 것임) </li> </ul> |
-| [Neural Pruning via Growing Regularization](https://openreview.net/forum?id=o966_Is_nPA) | ICLR | `F`     | [PyTorch(Author)](https://github.com/MingSun-Tse/Regularization-Pruning)   |
+| 🔥 [Neural Pruning via Growing Regularization](https://openreview.net/forum?id=o966_Is_nPA) | ICLR | `F`     | [PyTorch(Author)](https://github.com/MingSun-Tse/Regularization-Pruning)   |
 | Method는 잘 모르겠지만 코드가 공개되어있고 구현이 쉽다고 한다.  |
 | [ChipNet: Budget-Aware Pruning with Heaviside Continuous Approximations](https://openreview.net/forum?id=xCxXwTzx4L1) | ICLR | `F`     | [PyTorch(Author)](https://github.com/transmuteAI/ChipNet)   |
 | |
-| [Network Pruning That Matters: A Case Study on Retraining Variants](https://openreview.net/forum?id=Cb54AMqHQFP) | ICLR | `F`     | [PyTorch(Author)](https://github.com/lehduong/NPTM)   |
-| |
+| [~~Network Pruning That Matters: A Case Study on Retraining Variants~~](https://openreview.net/forum?id=Cb54AMqHQFP) | ICLR | `F`     | [PyTorch(Author)](https://github.com/lehduong/NPTM)   |
+| Pruned network를 retraining할 때 learning rate를 잘 설정하는 것이 중요함을 발견. 크게 설정하는 것이 좋으며, pruned model을 learning rate 설정 잘 함으로써 pruning을 하는 method보다 성능이 좋다고 함. 흥미로워보이지만 나랑 방향이 다름 |
 | [Multi-Prize Lottery Ticket Hypothesis: Finding Accurate Binary Neural Networks by Pruning A Randomly Weighted Network](https://openreview.net/forum?id=U_mat0b9iv) | ICLR | `W`     | [PyTorch(Author)](https://github.com/chrundle/biprop)   |
 | 충분히 over-parametrized NN with random initialization을 잘 pruning하면 학습없이도 학습한 모델 만큼의 성능을 낼 수 있다는 가설. 나와 방향성이 다름 |
-| [Layer-adaptive Sparsity for the Magnitude-based Pruning](https://openreview.net/forum?id=H6ATjJ0TKdf) | ICLR | `W`     | [PyTorch(Author)](https://github.com/jaeho-lee/layer-adaptive-sparsity)   |
-| |
+| 🔥 [Layer-adaptive Sparsity for the Magnitude-based Pruning](https://openreview.net/forum?id=H6ATjJ0TKdf) | ICLR | `W`     | [PyTorch(Author)](https://github.com/jaeho-lee/layer-adaptive-sparsity)   |
+| ㅣlayer별로 얼마나 prune할지 선택하는 방법 제안. 나와 방향이 비슷. |
 | [Pruning Neural Networks at Initialization: Why Are We Missing the Mark?](https://openreview.net/forum?id=Ig-VyQc-MLK) | ICLR | `W`     | - |
-| |
-| [Robust Pruning at Initialization](https://openreview.net/forum?id=vXj_ucZQ4hA) | ICLR | `W`     |  -  |
-| |
+| Layer에서 pruning 비율을 찾는 것보다, weight 자체를 prune할 지 결정하는 방법을 제시함. |
+| [~~Robust Pruning at Initialization ~~ ](https://openreview.net/forum?id=vXj_ucZQ4hA) | ICLR | `W`     |  -  |
+| Prune at initialization 은 나와 방향이 안맞음. |
 
 ### 2020
 
@@ -113,10 +113,10 @@ Paper reviews for Awesome Pruning [![Awesome](https://awesome.re/badge.svg)](htt
 | |
 | [DropNet: Reducing Neural Network Complexity via Iterative Pruning](https://proceedings.icml.cc/static/paper_files/icml/2020/2026-Paper.pdf) | ICML | `F`     | -   |
 | |
-| [Towards Efficient Model Compression via Learned Global Ranking](https://arxiv.org/abs/1904.12368) | CVPR  **(Oral)**| `F`     | [Pytorch(Author)](https://github.com/cmu-enyac/LeGR)   |
-| |
-| [HRank: Filter Pruning using High-Rank Feature Map](https://arxiv.org/abs/2002.10179) | CVPR **(Oral)** | `F`     | [Pytorch(Author)](https://github.com/lmbxmu/HRank)   |
-| |
+| [~~Towards Efficient Model Compression via Learned Global Ranking~~](https://arxiv.org/abs/1904.12368) | CVPR  **(Oral)**| `F`     | [Pytorch(Author)](https://github.com/cmu-enyac/LeGR)   |
+| 모든 filter를 globally ranking 매겨서 (across layers) 필요에 따라 prune해서 acc-speed trade off의 sweet spot을 찾음. 방향 안맞음 |
+| [~~HRank: Filter Pruning using High-Rank Feature Map~~](https://arxiv.org/abs/2002.10179) | CVPR **(Oral)** | `F`     | [Pytorch(Author)](https://github.com/lmbxmu/HRank)   |
+| feature map을 SVD해서 rank를 구함. 적용 불가. |
 | [Neural Network Pruning with Residual-Connections and Limited-Data](https://arxiv.org/abs/1911.08114) | CVPR **(Oral)** | `F`     | -  |
 | |
 | [Multi-Dimensional Pruning: A Unified Framework for Model Compression](http://openaccess.thecvf.com/content_CVPR_2020/html/Guo_Multi-Dimensional_Pruning_A_Unified_Framework_for_Model_Compression_CVPR_2020_paper.html) | CVPR **(Oral)** | `WF`     | -  |
@@ -195,8 +195,8 @@ Paper reviews for Awesome Pruning [![Awesome](https://awesome.re/badge.svg)](htt
 | |
 | [Structured Pruning of Neural Networks with Budget-Aware Regularization](https://arxiv.org/abs/1811.09332)                                                                                                       | CVPR            | `F`     | -                                                                                     |
 | |
-| [Importance Estimation for Neural Network Pruning](http://jankautz.com/publications/Importance4NNPruning_CVPR19.pdf)                                                                                             | CVPR            | `F`     | [PyTorch(Author)](https://github.com/NVlabs/Taylor_pruning)                           |
-| 정해진 비율만큼 pruning |
+| 🔥 [Importance Estimation for Neural Network Pruning](http://jankautz.com/publications/Importance4NNPruning_CVPR19.pdf)                                                                                             | CVPR            | `F`     | [PyTorch(Author)](https://github.com/NVlabs/Taylor_pruning)                           |
+| weight를 버렸을 때 loss 증가량을 이용해서 importance를 계산함. 정해진 비율만큼 pruning |
 | [OICSR: Out-In-Channel Sparsity Regularization for Compact Deep Neural Networks](https://arxiv.org/abs/1905.11664)                                                                                               | CVPR            | `F`     | -                                                                                     |
 | |
 | [Partial Order Pruning: for Best Speed/Accuracy Trade-off in Neural Architecture Search](https://arxiv.org/abs/1903.03777)                                                                                       | CVPR            | `Other` | [TensorFlow(Author)](https://github.com/lixincn2015/Partial-Order-Pruning)            |
