@@ -22,7 +22,7 @@ Paper reviews for Awesome Pruning [![Awesome](https://awesome.re/badge.svg)](htt
 | 어느정도 pruning 하면 성능이 얼마나 나올지 계산하는 방법 제안함. |
 | [Towards Compact CNNs via Collaborative Compression](https://arxiv.org/abs/2105.11228) | CVPR | `F`     | [PyTorch(Author)](https://github.com/liuguoyou/Towards-Compact-CNNs-via-Collaborative-Compression)   |
 | <ul> <li> channel pruning + Tensor decomposition을 제안함. 이건 나랑 상관 없음 </li> <li> Whole network compression rate $C$ 가 주어졌을 때, 레이어별compression rate $R^i$를 automatically 선택하는 global compression rate optimization method을 제안함. </li> </ul>  |
-| [Content-Aware GAN Compression](https://arxiv.org/abs/2104.02244) | CVPR | `F`     | [PyTorch(Author)](https://github.com/lychenyoko/content-aware-gan-compression)   |
+| [~~Content-Aware GAN Compression~~](https://arxiv.org/abs/2104.02244) | CVPR | `F`     | [PyTorch(Author)](https://github.com/lychenyoko/content-aware-gan-compression)   |
 | GAN에 특화된 방법. 나랑 관련 없음. |
 | [Permute, Quantize, and Fine-tune: Efficient Compression of Neural Networks](https://arxiv.org/abs/2010.15703) | CVPR | `F`     | [PyTorch(Author)](https://github.com/uber-research/permute-quantize-finetune)   |
 | Computational efficiency가 목적. Vector Quantization에 관한 연구. 나와 방향성이 다름 |
