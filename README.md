@@ -26,7 +26,7 @@ Paper reviews for Awesome Pruning [![Awesome](https://awesome.re/badge.svg)](htt
 | GAN에 특화된 방법. 나랑 관련 없음. |
 | [Permute, Quantize, and Fine-tune: Efficient Compression of Neural Networks](https://arxiv.org/abs/2010.15703) | CVPR | `F`     | [PyTorch(Author)](https://github.com/uber-research/permute-quantize-finetune)   |
 | Computational efficiency가 목적. Vector Quantization에 관한 연구. 나와 방향성이 다름 |
-| [NPAS: A Compiler-aware Framework of Unified Network Pruning andArchitecture Search for Beyond Real-Time Mobile Acceleration](https://arxiv.org/abs/2012.00596) | CVPR | `F`     | -  |
+| [~~NPAS: A Compiler-aware Framework of Unified Network Pruning andArchitecture Search for Beyond Real-Time Mobile Acceleration~~](https://arxiv.org/abs/2012.00596) | CVPR | `F`     | -  |
 | Mobile platform에 특화하기 위해서 Compiler erfficient pruning을 제안함. 동시에 NAS를 적용. 나와 방향성이 다름. |
 | [Network Pruning via Performance Maximization](https://openaccess.thecvf.com/content/CVPR2021/papers/Gao_Network_Pruning_via_Performance_Maximization_CVPR_2021_paper.pdf) | CVPR | `F`     | -  |
 | <ul> <li> Sub-network(=pruned network)의 acc를 예측하기 위해서 performance prediction network를 학습시키는 방법을 제안함. </li> <li> Performance prediction network를 학습시키기 위해서 episodic memory를 제안함 </li> </ul>|
@@ -34,7 +34,7 @@ Paper reviews for Awesome Pruning [![Awesome](https://awesome.re/badge.svg)](htt
 | <ul> <li> Least important filter를 pruning 하는 것 보다, structural redundanc를 기준으로 pruning 하는 것이 더 성능이 좋다고 주장. </li> <li> sturctural redundancy : layer의 redundancy를 구하고 redundancy가 큰 layer의 unimportant filter를 제거함. </li> </ul>  |
 | [~~Manifold Regularized Dynamic Network Pruning~~](https://arxiv.org/abs/2103.05861) | CVPR | `F`     | -  |
 | <ul> <li> input마다 다르게 pruning하는 방법  </li> <li> ipnut 간의 relation을 고려하기 위해서 input의 manifold information을 pruned netowkr space에 embedding하는 방법을 제안. </li> <li> 경험상 dynamic approach 또는 attentrion은 EEG에 효과가 없음 </li> </ul>|
-| [Joint-DetNAS: Upgrade Your Detector with NAS, Pruning and Dynamic Distillation](https://arxiv.org/abs/2105.12971) | CVPR | `FO`     | -  |
+| [~~Joint-DetNAS: Upgrade Your Detector with NAS, Pruning and Dynamic Distillation~~](https://arxiv.org/abs/2105.12971) | CVPR | `FO`     | -  |
 | Detection task에서 NAS를 효율적으로 사용하기 위해서 Pruning과 Distilation을 활용하는 방법을 제안. 내 방향성과 맞지않음 |
 | [A Gradient Flow Framework For Analyzing Network Pruning](https://openreview.net/forum?id=rumv7QmLUue) | ICLR | `F`     | [PyTorch(Author)](https://github.com/EkdeepSLubana/flowandprune)   |
 | <ul> <li> 잘 모르겠지만 standard method를 알려줘서 봐봄직함. </li> <li> method를 propose하는 건 아닌 것 같고 해석 view를 제시하는 듯하다.  </li> <li> importance-measure based prunning 방법을 training 중에 적용해서 training과 pruning을 동시에 하는 방법들이 최근 많이 제안되었는데, 그에 대한 이론적 근거를 분석한 것 같다. </li> <li> importance-measure based pruning에 대한 소개를 읽고 적용해보면 좋겠다. (이 분야의 sota일 것임) </li> </ul> |
@@ -44,7 +44,7 @@ Paper reviews for Awesome Pruning [![Awesome](https://awesome.re/badge.svg)](htt
 | |
 | [~~Network Pruning That Matters: A Case Study on Retraining Variants~~](https://openreview.net/forum?id=Cb54AMqHQFP) | ICLR | `F`     | [PyTorch(Author)](https://github.com/lehduong/NPTM)   |
 | Pruned network를 retraining할 때 learning rate를 잘 설정하는 것이 중요함을 발견. 크게 설정하는 것이 좋으며, pruned model을 learning rate 설정 잘 함으로써 pruning을 하는 method보다 성능이 좋다고 함. 흥미로워보이지만 나랑 방향이 다름 |
-| [Multi-Prize Lottery Ticket Hypothesis: Finding Accurate Binary Neural Networks by Pruning A Randomly Weighted Network](https://openreview.net/forum?id=U_mat0b9iv) | ICLR | `W`     | [PyTorch(Author)](https://github.com/chrundle/biprop)   |
+| [~~Multi-Prize Lottery Ticket Hypothesis: Finding Accurate Binary Neural Networks by Pruning A Randomly Weighted Network~~](https://openreview.net/forum?id=U_mat0b9iv) | ICLR | `W`     | [PyTorch(Author)](https://github.com/chrundle/biprop)   |
 | 충분히 over-parametrized NN with random initialization을 잘 pruning하면 학습없이도 학습한 모델 만큼의 성능을 낼 수 있다는 가설. 나와 방향성이 다름 |
 | 🔥 [Layer-adaptive Sparsity for the Magnitude-based Pruning](https://openreview.net/forum?id=H6ATjJ0TKdf) | ICLR | `W`     | [PyTorch(Author)](https://github.com/jaeho-lee/layer-adaptive-sparsity)   |
 | ㅣlayer별로 얼마나 prune할지 선택하는 방법 제안. 나와 방향이 비슷. |
