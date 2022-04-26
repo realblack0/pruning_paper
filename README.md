@@ -24,7 +24,7 @@ Paper reviews for Awesome Pruning [![Awesome](https://awesome.re/badge.svg)](htt
 | <ul> <li> channel pruning + Tensor decomposition을 제안함. 이건 나랑 상관 없음 </li> <li> Whole network compression rate $C$ 가 주어졌을 때, 레이어별compression rate $R^i$를 automatically 선택하는 global compression rate optimization method을 제안함. </li> </ul>  |
 | [~~Content-Aware GAN Compression~~](https://arxiv.org/abs/2104.02244) | CVPR | `F`     | [PyTorch(Author)](https://github.com/lychenyoko/content-aware-gan-compression)   |
 | GAN에 특화된 방법. 나랑 관련 없음. |
-| [Permute, Quantize, and Fine-tune: Efficient Compression of Neural Networks](https://arxiv.org/abs/2010.15703) | CVPR | `F`     | [PyTorch(Author)](https://github.com/uber-research/permute-quantize-finetune)   |
+| [~~Permute, Quantize, and Fine-tune: Efficient Compression of Neural Networks~~](https://arxiv.org/abs/2010.15703) | CVPR | `F`     | [PyTorch(Author)](https://github.com/uber-research/permute-quantize-finetune)   |
 | Computational efficiency가 목적. Vector Quantization에 관한 연구. 나와 방향성이 다름 |
 | [~~NPAS: A Compiler-aware Framework of Unified Network Pruning andArchitecture Search for Beyond Real-Time Mobile Acceleration~~](https://arxiv.org/abs/2012.00596) | CVPR | `F`     | -  |
 | Mobile platform에 특화하기 위해서 Compiler erfficient pruning을 제안함. 동시에 NAS를 적용. 나와 방향성이 다름. |
