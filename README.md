@@ -29,7 +29,7 @@ Paper reviews for Awesome Pruning [![Awesome](https://awesome.re/badge.svg)](htt
 | [~~NPAS: A Compiler-aware Framework of Unified Network Pruning andArchitecture Search for Beyond Real-Time Mobile Acceleration~~](https://arxiv.org/abs/2012.00596) | CVPR | `F`     | -  |
 | Mobile platform에 특화하기 위해서 Compiler erfficient pruning을 제안함. 동시에 NAS를 적용. 나와 방향성이 다름. |
 | [Network Pruning via Performance Maximization](https://openaccess.thecvf.com/content/CVPR2021/papers/Gao_Network_Pruning_via_Performance_Maximization_CVPR_2021_paper.pdf) | CVPR | `F`     | -  |
-| <ul> <li> loss를 minimize하는 것이 best accuracy를 보장하지 않기 때문에, accuracy 예상값을 maximize 하는 loss function을 제안함. </li> <li> Sub-network(=pruned network)의 accuracy를 예상값을 얻기 위해서 performance prediction network (PN)를 고안함. PN은 상기 loss function에 사용됨. </li> <li> PN을 안정적으로 학습시키기 위해서 episodic memory를 제안함 </li> </ul>|
+| <ul> <li> loss를 minimize하는 것이 best accuracy를 보장하지 않기 때문에, accuracy 예상값을 maximize 하는 loss function을 제안함. </li> <li> Sub-network(=pruned network)의 accuracy 예상값을 얻기 위해서 performance prediction network (PN)를 고안함. PN은 상기 loss function에 사용됨. </li> <li> PN을 안정적으로 학습시키기 위해서 episodic memory를 제안함 </li> </ul>|
 | [Convolutional Neural Network Pruning with Structural Redundancy Reduction](https://arxiv.org/abs/2104.03438) | CVPR | `F`     |-|
 | <ul> <li> Least important filter를 pruning 하는 것 보다, structural redundanc를 기준으로 pruning 하는 것이 더 성능이 좋다고 주장. </li> <li> sturctural redundancy : layer의 redundancy를 구하고 redundancy가 큰 layer의 unimportant filter를 제거함. </li> </ul>  |
 | [~~Manifold Regularized Dynamic Network Pruning~~](https://arxiv.org/abs/2103.05861) | CVPR | `F`     | -  |
